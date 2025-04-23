@@ -1,0 +1,26 @@
+.heading {
+  width: 100%;
+  background: var(--simple-white);
+  display: flex;
+  justify-content: center;
+  align-items: space-around;
+  padding: 3rem;
+}
+
+.content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.navList {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}

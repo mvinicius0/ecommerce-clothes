@@ -1,4 +1,4 @@
-import { Heading } from "./Components/Heading";
+import Heading from "./Components/Heading";
 import "./Styles/global.css";
 import "./Styles/theme.css";
 

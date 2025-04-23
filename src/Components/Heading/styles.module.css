@@ -1,26 +1,116 @@
-.heading {
+.header {
   width: 100%;
+  border-bottom: 1px solid #e5e5e5;
+  font-family: sans-serif;
   background: var(--simple-white);
-  display: flex;
-  justify-content: center;
-  align-items: space-around;
-  padding: 3rem;
 }
 
-.content {
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
   display: flex;
+  justify-content: space-between;
   align-items: center;
-  justify-content: center;
+}
+
+.logo {
+  font-size: 3rem;
+  font-weight: 800;
+  color: #000;
 }
 
 .nav {
   display: flex;
-  justify-content: space-around;
+  gap: 1.5rem;
   align-items: center;
+  font-size: 1.6rem;
+  outline: none;
 }
 
-.navList {
+.menuItem {
   display: flex;
-  justify-content: space-around;
   align-items: center;
+  gap: 0.25rem;
+  cursor: pointer;
+  position: relative;
+  text-decoration: none;
+  color: var(--gray-900);
+}
+
+.menuItem:hover {
+  color: #000;
+}
+
+.dropdown {
+  position: relative;
+}
+
+.dropdownContent {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 0.25rem;
+  margin-top: 0.5rem;
+  padding: 0.5rem 0;
+  z-index: 10;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.dropdown:hover .dropdownContent {
+  display: block;
+}
+
+.dropdownContent a {
+  display: block;
+  padding: 0.5rem 1rem;
+  text-decoration: none;
+  color: #444;
+}
+
+.dropdownContent a:hover {
+  background-color: #f0f0f0;
+}
+
+.actions {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.searchWrapper {
+  position: relative;
+  min-width: 40rem;
+  max-width: 40rem;
+  padding: 1rem;
+}
+
+.searchInput {
+  width: 100%;
+  padding: 1.6rem;
+  border-radius: 9999px;
+  border: none;
+  background-color: #f3f3f3;
+  font-size: 1.6rem;
+  outline: none;
+}
+
+.searchIcon {
+  position: absolute;
+  left: 1.2rem;
+  width: 1.4rem;
+  height: 1.4rem;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #888;
+}
+
+.iconButton {
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #000;
 }
